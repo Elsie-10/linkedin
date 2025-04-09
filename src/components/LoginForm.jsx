@@ -1,29 +1,36 @@
 import React from "react";
 
 function LoginForm() {
+   
+  
   return (
-    <>
-      <form>
-        <div className="container">
-          <label htmlFor="uname">UserName:</label><br/>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required
-          ></input><br></br>
+    <>  
 
-          <label htmlFor="psw">Password:</label><br/>
-          <input
-            type="text"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          ></input><br></br>
+    <div className="login-container">
+      <div className="login-box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+          alt="LinkedIn Logo"
+          className="login-logo"
+        />
+        <h2>Log in</h2>
+        <p className="subtitle">Stay updated on your professional world</p>
 
-          <button type="submit">Login</button>
+        <input type="text" placeholder="Email or Phone" />
+        <input type="password" placeholder="Password" />
+
+        <button>Log in</button>
+
+        <p className="forgot-password">Forgot password?</p>
+
+        <div className="divider">
+          <span>or</span>
         </div>
-      </form>
+
+        <button className="join-now">New to LinkedIn? Join now</button>
+      </div>
+    </div>
+      
     </>
   );
 }
